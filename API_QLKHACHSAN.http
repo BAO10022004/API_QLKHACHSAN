@@ -1,0 +1,6 @@
+@API_QLKHACHSAN_HostAddress = http://localhost:5149
+
+GET {{API_QLKHACHSAN_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
