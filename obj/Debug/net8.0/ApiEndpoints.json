@@ -1,16 +1,6 @@
 [
   {
     "ContainingType": "API_QLKHACHSAN.Controllers.UserController",
-    "Method": "Index",
-    "RelativePath": "api/users",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_QLKHACHSAN.Controllers.UserController",
     "Method": "SignUpUser",
     "RelativePath": "api/users",
     "HttpMethod": "POST",
@@ -18,24 +8,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "username",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "password",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "role",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "dtoUser",
+        "Type": "API_QLKHACHSAN.Controllers.DTOUserSignUp",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -65,19 +40,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "username",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "password",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "dTOUserSignIn",
+        "Type": "API_QLKHACHSAN.Controllers.DTOUserSignIn",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

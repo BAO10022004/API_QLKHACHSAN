@@ -1015,3 +1015,4 @@ C:\Users\giaba\source\repos\3\Ky2\CNPM\API_QLKHACHSAN\bin\Debug\net8.0\runtimes\
 C:\Users\giaba\source\repos\3\Ky2\CNPM\API_QLKHACHSAN\bin\Debug\net8.0\runtimes\tvos\lib\net8.0\System.Data.Odbc.dll
 C:\Users\giaba\source\repos\3\Ky2\CNPM\API_QLKHACHSAN\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.Odbc.dll
 C:\Users\giaba\source\repos\3\Ky2\CNPM\API_QLKHACHSAN\obj\Debug\net8.0\API_QLKHACHSAN.csproj.IkvmFrameworkReference.cache
+C:\Users\giaba\source\repos\3\Ky2\CNPM\API_QLKHACHSAN\obj\Debug\net8.0\API_QLKHACHSAN.sourcelink.json

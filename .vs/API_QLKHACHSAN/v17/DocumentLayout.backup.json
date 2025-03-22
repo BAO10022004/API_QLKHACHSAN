@@ -7,12 +7,32 @@
       "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan\\models\\quanlykhachsancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:models\\quanlykhachsancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan\\models\\thanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:models\\thanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan\\models\\kenhdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,10 +47,6 @@
       "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:api_qlkhachsan.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan\\api_qlkhachsan.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:api_qlkhachsan.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
@@ -42,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,20 +82,72 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuanLyKhachSanContext.cs",
+              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\Models\\QuanLyKhachSanContext.cs",
+              "RelativeDocumentMoniker": "Models\\QuanLyKhachSanContext.cs",
+              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\Models\\QuanLyKhachSanContext.cs",
+              "RelativeToolTip": "Models\\QuanLyKhachSanContext.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAcwBMAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T00:43:28.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ThanhToan.cs",
+              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\Models\\ThanhToan.cs",
+              "RelativeDocumentMoniker": "Models\\ThanhToan.cs",
+              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\Models\\ThanhToan.cs",
+              "RelativeToolTip": "Models\\ThanhToan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T00:43:26.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T00:43:20.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\Models\\UserRole.cs",
+              "RelativeDocumentMoniker": "Models\\UserRole.cs",
+              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\Models\\UserRole.cs",
+              "RelativeToolTip": "Models\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T00:43:18.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAJoAAAB8AAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAgwMEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T18:03:51.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -87,11 +155,12 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-19T17:59:52.994Z"
+              "WhenOpened": "2025-03-19T17:59:52.994Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -103,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "KenhDatPhong.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\Models\\KenhDatPhong.cs",
               "RelativeDocumentMoniker": "Models\\KenhDatPhong.cs",
@@ -115,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "KhachHang.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\Models\\KhachHang.cs",
               "RelativeDocumentMoniker": "Models\\KhachHang.cs",
@@ -127,19 +196,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T17:43:19.686Z"
+              "WhenOpened": "2025-03-19T17:43:19.686Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "API_QLKHACHSAN",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\API_QLKHACHSAN.csproj",
               "RelativeDocumentMoniker": "API_QLKHACHSAN.csproj",
@@ -150,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "API_QLKHACHSAN.csproj",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN\\API_QLKHACHSAN.csproj",
               "RelativeDocumentMoniker": "API_QLKHACHSAN.csproj",
