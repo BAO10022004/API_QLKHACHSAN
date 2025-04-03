@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "API_QLKHACHSAN.Controllers.UserController",
-    "Method": "Index",
-    "RelativePath": "api/users",
+    "ContainingType": "API_QLKHACHSAN.Controllers.DatPhongController",
+    "Method": "AccessApi",
+    "RelativePath": "api/DatPhong",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,10 +10,136 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_QLKHACHSAN.Controllers.DatPhongController",
+    "Method": "HuyDatPhong",
+    "RelativePath": "api/DatPhong/CancelBill",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestCancelBill",
+        "Type": "API_QLKHACHSAN.Controllers.RequestCancelBill",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_QLKHACHSAN.Controllers.DatPhongController",
+    "Method": "DatPhong",
+    "RelativePath": "api/DatPhong/DatPhong",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestOrder",
+        "Type": "API_QLKHACHSAN.Controllers.RequestOrder",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_QLKHACHSAN.Controllers.KhachHangController",
+    "Method": "TaoTaiKhoang",
+    "RelativePath": "api/KhachHang/TaoTaiKhoang",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "API_QLKHACHSAN.Controllers.RequestTaoTaiKhoang",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_QLKHACHSAN.Controllers.LoaiPhongController",
+    "Method": "TinhGiaLoaiPhong",
+    "RelativePath": "api/LoaiPhong/TinhGiaLoaiPhong",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maLoaiPhong",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "coThemNguoi",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_QLKHACHSAN.Controllers.PhongController",
+    "Method": "GetRoom",
+    "RelativePath": "api/Phong/GetRoom",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_QLKHACHSAN.Controllers.PhongController",
+    "Method": "GetRoomEmpty",
+    "RelativePath": "api/Phong/GetRoomEmpty",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NgayNhan",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "NgayTra",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_QLKHACHSAN.Controllers.UserController",
-    "Method": "SignUpUser",
+    "Method": "GenerateJwtToken",
     "RelativePath": "api/users",
-    "HttpMethod": "POST",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "API_QLKHACHSAN.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_QLKHACHSAN.Controllers.UserController",
+    "Method": "AddRoleForUser",
+    "RelativePath": "api/users/AddRoleForUser",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -23,19 +149,14 @@
         "IsRequired": false
       },
       {
-        "Name": "password",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
         "Name": "email",
         "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "role",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "roleNameList",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -60,24 +181,30 @@
     "ContainingType": "API_QLKHACHSAN.Controllers.UserController",
     "Method": "SignInUser",
     "RelativePath": "api/users/SignIn",
-    "HttpMethod": "GET",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "username",
-        "Type": "System.String",
-        "IsRequired": false
-      },
+        "Name": "requestSignIn",
+        "Type": "API_QLKHACHSAN.Controllers.RequestSignIn",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_QLKHACHSAN.Controllers.UserController",
+    "Method": "SignUpUser",
+    "RelativePath": "api/users/SignUpUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "password",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "requestSignUp",
+        "Type": "API_QLKHACHSAN.Controllers.RequestSignUp",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

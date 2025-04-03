@@ -133,6 +133,8 @@ public partial class QuanLyKhachSanContext : DbContext
             entity.Property(e => e.NgayDat)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
+            entity.Property(e => e.NgayNhanPhong).HasColumnType("datetime");
+            entity.Property(e => e.NgayTraPhong).HasColumnType("datetime");
             entity.Property(e => e.PhanTramGiamGia)
                 .HasDefaultValue(0m)
                 .HasColumnType("decimal(5, 2)");
