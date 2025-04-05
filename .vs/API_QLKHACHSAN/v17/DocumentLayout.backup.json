@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\controllers\\datphongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:controllers\\datphongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\controllers\\loaiphongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:controllers\\loaiphongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\controllers\\khachhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:controllers\\khachhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\controllers\\datphongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:controllers\\datphongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\controllers\\phongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:controllers\\phongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\service\\loaiphongservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:service\\loaiphongservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\service\\phongservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:service\\phongservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\api_qlkhachsan.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:api_qlkhachsan.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\models\\quanlykhachsancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,32 +47,12 @@
       "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\service\\phongservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:service\\phongservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\service\\loaiphongservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:service\\loaiphongservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\controllers\\loaiphongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:controllers\\loaiphongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\controllers\\phongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:controllers\\phongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\models\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:models\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\api_qlkhachsan.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:api_qlkhachsan.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\api_qlkhachsan.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:api_qlkhachsan.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
@@ -74,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -89,25 +89,16 @@
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "LoaiPhongServices.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Service\\LoaiPhongServices.cs",
               "RelativeDocumentMoniker": "Service\\LoaiPhongServices.cs",
               "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Service\\LoaiPhongServices.cs",
               "RelativeToolTip": "Service\\LoaiPhongServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T01:37:46.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T01:37:46.338Z"
             },
             {
               "$type": "Document",
@@ -119,142 +110,60 @@
               "RelativeToolTip": "Service\\PhongServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T00:22:22.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T00:22:22.332Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T17:43:19.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "LoaiPhongController.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Controllers\\LoaiPhongController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoaiPhongController.cs",
               "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Controllers\\LoaiPhongController.cs",
               "RelativeToolTip": "Controllers\\LoaiPhongController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T01:27:47.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T01:27:47.39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAAAUwOIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAiwOwAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T18:03:51.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "DatPhongController.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Controllers\\DatPhongController.cs",
               "RelativeDocumentMoniker": "Controllers\\DatPhongController.cs",
               "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Controllers\\DatPhongController.cs",
               "RelativeToolTip": "Controllers\\DatPhongController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwOQAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAANsAAAAAAAAAAAAmwOUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T07:39:20.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T07:39:20.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "KhachHangController.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Controllers\\KhachHangController.cs",
               "RelativeDocumentMoniker": "Controllers\\KhachHangController.cs",
               "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Controllers\\KhachHangController.cs",
               "RelativeToolTip": "Controllers\\KhachHangController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAuwD0AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowFUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T19:49:55.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-02T19:49:55.561Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "QuanLyKhachSanContext.cs",
-              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Models\\QuanLyKhachSanContext.cs",
-              "RelativeDocumentMoniker": "Models\\QuanLyKhachSanContext.cs",
-              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Models\\QuanLyKhachSanContext.cs",
-              "RelativeToolTip": "Models\\QuanLyKhachSanContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T20:57:57.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PhongController.cs",
-              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Controllers\\PhongController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PhongController.cs",
-              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Controllers\\PhongController.cs",
-              "RelativeToolTip": "Controllers\\PhongController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAwwFkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T14:18:42.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-19T17:59:52.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Session.cs",
-              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Models\\Session.cs",
-              "RelativeDocumentMoniker": "Models\\Session.cs",
-              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Models\\Session.cs",
-              "RelativeToolTip": "Models\\Session.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T21:00:09.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "API_QLKHACHSAN.csproj",
-              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\API_QLKHACHSAN.csproj",
-              "RelativeDocumentMoniker": "API_QLKHACHSAN.csproj",
-              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\API_QLKHACHSAN.csproj",
-              "RelativeToolTip": "API_QLKHACHSAN.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-19T17:48:21.369Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "API_QLKHACHSAN.http",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\API_QLKHACHSAN.http",
               "RelativeDocumentMoniker": "API_QLKHACHSAN.http",
@@ -262,8 +171,79 @@
               "RelativeToolTip": "API_QLKHACHSAN.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-03-23T16:50:08.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T16:50:08.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PhongController.cs",
+              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Controllers\\PhongController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PhongController.cs",
+              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Controllers\\PhongController.cs",
+              "RelativeToolTip": "Controllers\\PhongController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowEUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:18:42.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T17:43:19.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "QuanLyKhachSanContext.cs",
+              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Models\\QuanLyKhachSanContext.cs",
+              "RelativeDocumentMoniker": "Models\\QuanLyKhachSanContext.cs",
+              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Models\\QuanLyKhachSanContext.cs",
+              "RelativeToolTip": "Models\\QuanLyKhachSanContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T20:57:57.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-19T17:59:52.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Session.cs",
+              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Models\\Session.cs",
+              "RelativeDocumentMoniker": "Models\\Session.cs",
+              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Models\\Session.cs",
+              "RelativeToolTip": "Models\\Session.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T21:00:09.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "API_QLKHACHSAN.csproj",
+              "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\API_QLKHACHSAN.csproj",
+              "RelativeDocumentMoniker": "API_QLKHACHSAN.csproj",
+              "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\API_QLKHACHSAN.csproj",
+              "RelativeToolTip": "API_QLKHACHSAN.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-19T17:48:21.369Z"
             },
             {
               "$type": "Document",
@@ -275,8 +255,7 @@
               "RelativeToolTip": "README.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-03-21T03:41:17.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T03:41:17.574Z"
             },
             {
               "$type": "Document",
@@ -288,8 +267,7 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-19T17:59:43.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T17:59:43.341Z"
             },
             {
               "$type": "Document",
@@ -300,8 +278,15 @@
               "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\API_QLKHACHSAN.csproj",
               "RelativeToolTip": "API_QLKHACHSAN.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-19T17:50:30.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T17:50:30.894Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             }
           ]
         }

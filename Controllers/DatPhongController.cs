@@ -19,9 +19,35 @@ namespace API_QLKHACHSAN.Controllers
         {
             this.dbContext = _dbContext ?? new QuanLyKhachSanContext();
         }
+        [HttpGet("LayDatPhong")]
+        [Authorize]
+        public IActionResult LayDatPhong()
+        {
+            // Get role
+            var currentUsername = User.FindFirst(ClaimTypes.Name)?.Value;
+            var user = dbContext.Users.FirstOrDefault(u => u.Username == currentUsername);
+            if (user == null)
+                return BadRequest("Must sign in to countinue");
+            var roles = user.UserRoles.Select(x => x.Role.RoleName).ToList();
+            // Check Vetify
+            if (roles.Contains("RECEPTIONIST") || (roles.Contains("MANAGER")) || (roles.Contains("ADMIN")))
+            {
+                return StatusCode(403, "You do not have permission to get room.");
+            }
+            List<DatPhong> listDatPhong = new List<DatPhong>();
+            try
+            {
+                listDatPhong = dbContext.DatPhongs.ToList();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);  
+            }
+            return Ok(new { Message = "Success", Data = listDatPhong });
+        }
         [HttpPut("DatPhong")]
         [Authorize]
-        public async Task<IActionResult> DatPhong(RequestOrder requestOrder)
+        public async Task<IActionResult> DatPhong(DatPhongDTO requestOrder)
         {
             PhongServices = new PhongServices();
             var currentUsername = User.FindFirst(ClaimTypes.Name)?.Value;
@@ -48,7 +74,7 @@ namespace API_QLKHACHSAN.Controllers
             }
 
             var kenh = await dbContext.KenhDatPhongs.FirstOrDefaultAsync(
-                k => k.TenKenh.ToUpper().Equals(requestOrder.TenKenh.ToUpper()));
+                k => k.MaKenh.Equals(requestOrder.MaKenh));
             if (kenh == null)
             {
                 return BadRequest("Booking channel is invalid");
@@ -132,11 +158,6 @@ namespace API_QLKHACHSAN.Controllers
 
             return Ok(new { Message = "Room booked successfully", BookingCode = order.MaDatPhongHienThi });
         }
-        [HttpGet]
-        public async Task<ActionResult> AccessApi()
-        {
-            return Ok(await new PhongServices().GetListRoom());
-        }
         private string GenerateBookingCode()
         {
             DateTime now = DateTime.Now;
@@ -144,7 +165,7 @@ namespace API_QLKHACHSAN.Controllers
             return $"{now.Day}{now.Month}{now.Year}{bookingsToday}";
         }
 
-        private bool TryParseDates(RequestOrder request, out DateTime checkIn, out DateTime checkOut, out string errorMessage)
+        private bool TryParseDates(DatPhongDTO request, out DateTime checkIn, out DateTime checkOut, out string errorMessage)
         {
             errorMessage = null;
             checkIn = default;
@@ -241,10 +262,11 @@ namespace API_QLKHACHSAN.Controllers
             dbContext.SaveChanges();
             return Ok(new { Message = "Approve success ", DatPhong = order });
         }
+    
     }
-    public class RequestOrder
+    public class DatPhongDTO
     {
-        public string? TenKenh { get; set; }
+        public string? MaKenh { get; set; }
         public string NgayNhanPhong { get; set; }
         public string NgayTraPhong { get; set; }
         public int SoNguoiLon { get; set; }

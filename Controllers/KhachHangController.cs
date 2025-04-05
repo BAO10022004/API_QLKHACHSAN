@@ -15,7 +15,7 @@ namespace API_QLKHACHSAN.Controllers
             this.dbContext = _dbContext ?? new QuanLyKhachSanContext();
         }
         [HttpPut("TaoTaiKhoang")]
-        public IActionResult TaoTaiKhoang(RequestTaoTaiKhoang req)
+        public IActionResult TaoTaiKhoang(TaiKhoangDTO req)
         {
             if (req == null)
             {
@@ -38,10 +38,6 @@ namespace API_QLKHACHSAN.Controllers
                 return BadRequest("Email incorrect");
             }
             kh.Email = req.Email;
-            //if (!Regex.IsMatch(req.SoDienThoai, @"^0+d{9}$"))
-            //{
-            //    return BadRequest("SoDienThoai incorrect");
-            //}
             if(dbContext.KhachHangs.FirstOrDefault(x=> x.SoDienThoai.Equals(req.SoDienThoai))  != null)
             {
                 return BadRequest("SoDienThoai exits");
@@ -75,11 +71,11 @@ namespace API_QLKHACHSAN.Controllers
             {
                 return BadRequest($"Create fail : {ex.Message}");
             }
-            return Ok(new  {Message = "Create account success",KhachHang =  kh });
+            return Ok(new  Response (){Messenge = "Create account success",Data =  kh });
         }
 
     }
-    public class RequestTaoTaiKhoang
+    public class TaiKhoangDTO
     {
         public string  TenDayDu { get; set; }
         public string Email { get; set; }

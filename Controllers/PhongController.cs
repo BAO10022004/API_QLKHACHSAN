@@ -32,8 +32,8 @@ namespace API_QLKHACHSAN.Controllers
             }
             var listRoom = dbContext.Phongs.ToList();
             if (listRoom == null)
-                return BadRequest(new Response { Messesge = "Fail", ListRoom = null });
-            return Ok(new Response { Messesge = "Success", ListRoom = listRoom });
+                return BadRequest(new Response { Messenge = "Fail", Data = null });
+            return Ok(new Response { Messenge = "Success", Data = listRoom });
         }
 
         [HttpPut("GetRoomEmpty")]
@@ -86,14 +86,6 @@ namespace API_QLKHACHSAN.Controllers
         }
     }
 
-    public class Response
-    {
-        string messesge;
-        List<Phong> listRoom;
-
-        public string Messesge { get => messesge; set => messesge = value; }
-        public List<Phong> ListRoom { get => listRoom; set => listRoom = value; }
-    }
-
+   
 
 }

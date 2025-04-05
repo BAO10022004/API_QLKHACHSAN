@@ -31,5 +31,24 @@ namespace API_QLKHACHSAN.Controllers
                         * (1 - loaiPhong.GiamGiaDatSom / 100).Value) + "");
             return Ok(tongTien);
         }
+        [HttpGet("LayLoaiPhong")]
+        public IActionResult LayLoaiPhong()
+        {
+            List<LoaiPhong> listLoaiPhong = new List<LoaiPhong>();
+            try
+            {
+                listLoaiPhong = dbContext.LoaiPhongs.Where(p => p.TrangThai == true).ToList();
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("ERROR: " + ex.Message);
+            }
+            return Ok(new Response()
+            {
+                Messenge = "Success",
+                Data = listLoaiPhong
+            });
+        }
     }
 }

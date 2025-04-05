@@ -30,32 +30,23 @@ namespace API_QLKHACHSAN.Controllers
 
         [HttpPost("SignUpUser")]
         public IActionResult SignUpUser(RequestSignUp requestSignUp)
-        {
-            ApiResponse reponsibility = new ApiResponse();
-
-            reponsibility.IsSuccess = false;
-            reponsibility.Message = "Sign up Fail";
-            reponsibility.Result = null;
-            // check username
+        {            // check username
             if (requestSignUp.username.Equals("") ||
                requestSignUp.password.Equals("") ||
                requestSignUp.email.Equals("")
                )
             {
-                reponsibility.Message = "Missing information";
-                return BadRequest(reponsibility);
+                return BadRequest("Missing information");
             }
             if (requestSignUp.username.Length < 8 || requestSignUp.password.Length < 8)
             {
-                reponsibility.Message = "Username and password must be at least 8 characters";
-                return BadRequest(reponsibility);
+                return BadRequest("Username and password must be at least 8 characters");
             }
             try
             {
                 if (dbContext.Users.FirstOrDefault(x => x.Username == requestSignUp.username) != null)
                 {
-                    reponsibility.Message = "Username is already taken";
-                    return BadRequest(reponsibility);
+                    return BadRequest("Username is already taken");
                 }
             }
             catch (System.Exception e)
@@ -67,8 +58,7 @@ namespace API_QLKHACHSAN.Controllers
             {
                 if (!Regex.IsMatch(requestSignUp.password, @"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!.#$@_+,?-]).{8,50}$"))
                 {
-                    reponsibility.Message = "Password is incorrect";
-                    return BadRequest(reponsibility);
+                    return BadRequest("Password is incorrect");
                 }
             }
             catch (System.Exception e)
@@ -82,8 +72,7 @@ namespace API_QLKHACHSAN.Controllers
 
                 if (!Regex.IsMatch(requestSignUp.email, @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"))
                 {
-                    reponsibility.Message = "Email is incorrect";
-                    return BadRequest(reponsibility);
+                    return BadRequest("Email is incorrect");
                 }
             }
             catch (System.Exception e)
@@ -95,8 +84,7 @@ namespace API_QLKHACHSAN.Controllers
             {
                 if (dbContext.Users.FirstOrDefault(x => x.Username == requestSignUp.email) != null)
                 {
-                    reponsibility.Message = "Email is already taken";
-                    return BadRequest(reponsibility);
+                    return BadRequest("Email is already taken");
                 }
             }
             catch (System.Exception e)
@@ -125,12 +113,10 @@ namespace API_QLKHACHSAN.Controllers
             }
             catch (System.Exception e)
             {
-                reponsibility.Message = "Can't hash password";
-                return BadRequest(reponsibility);
+                return BadRequest("Can't hash password");
             }
             user.Email = requestSignUp.email;
             user.DateCreated = DateTime.Now;
-            // add role 
             using var transaction = dbContext.Database.BeginTransaction();
             try
             {
@@ -138,15 +124,16 @@ namespace API_QLKHACHSAN.Controllers
                 dbContext.SaveChanges();
 
                 transaction.Commit();
-                reponsibility.IsSuccess = true;
-                return Ok(reponsibility);
+                return Ok(new Response() { 
+                    Messenge = "Success",
+                    Data = user 
+                });
             }
             catch (DbUpdateException ex)
             {
                 transaction.Rollback();
                 return BadRequest($"Database error: {ex.Message}");
             }
-            return Ok(reponsibility);
         }
 
         [HttpPut("SignIn")]
@@ -157,12 +144,6 @@ namespace API_QLKHACHSAN.Controllers
             {
                 return BadRequest("Missing information");
             }
-            ApiResponse apiResponse = new ApiResponse()
-            {
-                IsSuccess = false,
-                Message = "",
-                Result = null
-            };
 
             try
             {
@@ -171,8 +152,7 @@ namespace API_QLKHACHSAN.Controllers
 
                 if (user == null)
                 {
-                    apiResponse.Message = "Username is incorrect";
-                    return BadRequest(apiResponse);
+                    return BadRequest("Username is incorrect");
                 }
                 byte[] hashBytes = Convert.FromBase64String(user.PasswordHash);
                 byte[] salt = new byte[16];
@@ -184,19 +164,20 @@ namespace API_QLKHACHSAN.Controllers
                     {
                         if (hashBytes[i + 16] != hash[i])
                         {
-                            apiResponse.Message = "Password is incorrect";
-                            return BadRequest(apiResponse);
+                            return BadRequest("Password is incorrect");
                         }
                     }
                 }
-                apiResponse.IsSuccess = true;
-                apiResponse.Message = "Login successfully";
                 var token = GenerateJwtToken(user);
                 Session.Token = token;
-                return Ok(new
+                return Ok(new Response()
                 {
-                    token,
-                    username = user.Username,
+                    Messenge = "Success",
+                    Data = new { 
+                    Token = token,
+                    user = user,
+                    }
+
                 });
             }
             catch (System.Exception e)
@@ -207,10 +188,7 @@ namespace API_QLKHACHSAN.Controllers
         [HttpGet("GetUserByEmail")]
         public IActionResult GetUserByEmail(string email)
         {
-            ApiResponse response = new ApiResponse();
-            response.IsSuccess = false;
-            response.Message = "User not found";
-            response.Result = null;
+            
             if (email.Equals(""))
             {
                 return BadRequest("Fail: email is empty");
@@ -220,10 +198,7 @@ namespace API_QLKHACHSAN.Controllers
             {
                 return BadRequest("User not found");
             }
-            response.IsSuccess = false;
-            response.Message = "User found";
-            response.Result = user;
-            return Ok(response);
+            return Ok(new Response() {Messenge = "Success", Data = user });
         }
         [HttpGet]
         public string GenerateJwtToken(User user)
@@ -282,7 +257,7 @@ namespace API_QLKHACHSAN.Controllers
             //Save
             dbContext.UserRoles.AddRange(roleUserList);
             dbContext.SaveChanges();
-            return Ok("Add success");
+            return Ok(new Response() {Messenge= "Add role success",Data= user});
         }
     }
     public class RequestSignUp
