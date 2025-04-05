@@ -10,9 +10,9 @@ namespace API_QLKHACHSAN.Controllers
     public class PhuongThucThanhToanController : Controller
     {
         readonly API_QLKHACHSAN.Models.QuanLyKhachSanContext dbContext;
-        public PhuongThucThanhToanController()
+        public PhuongThucThanhToanController(QuanLyKhachSanContext _dbContext)
         {
-            dbContext = new Models.QuanLyKhachSanContext();
+            dbContext = _dbContext ?? new QuanLyKhachSanContext();
         }
         [HttpGet("LayRaPhuongThucThanhToan")]
         [Authorize]
