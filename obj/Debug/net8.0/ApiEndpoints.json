@@ -1,12 +1,18 @@
 [
   {
     "ContainingType": "API_QLKHACHSAN.Controllers.DatPhongController",
-    "Method": "AccessApi",
-    "RelativePath": "api/DatPhong",
-    "HttpMethod": "GET",
+    "Method": "XacNhanDatPhong",
+    "RelativePath": "api/DatPhong/ApproveBill",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "MaDatPhong",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -35,10 +41,40 @@
     "Parameters": [
       {
         "Name": "requestOrder",
-        "Type": "API_QLKHACHSAN.Controllers.RequestOrder",
+        "Type": "API_QLKHACHSAN.Controllers.DatPhongDTO",
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_QLKHACHSAN.Controllers.DatPhongController",
+    "Method": "LayDatPhong",
+    "RelativePath": "api/DatPhong/LayDatPhong",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_QLKHACHSAN.Controllers.KenhController",
+    "Method": "LayKenh",
+    "RelativePath": "api/kenh/LayKenh",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_QLKHACHSAN.Controllers.KhachHangController",
+    "Method": "GetListKhachHang",
+    "RelativePath": "api/KhachHang/GetKhachHang",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -51,10 +87,20 @@
     "Parameters": [
       {
         "Name": "req",
-        "Type": "API_QLKHACHSAN.Controllers.RequestTaoTaiKhoang",
+        "Type": "API_QLKHACHSAN.Controllers.TaiKhoangDTO",
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_QLKHACHSAN.Controllers.LoaiPhongController",
+    "Method": "LayLoaiPhong",
+    "RelativePath": "api/LoaiPhong/LayLoaiPhong",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -104,6 +150,73 @@
       {
         "Name": "NgayTra",
         "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_QLKHACHSAN.Controllers.PhuongThucThanhToanController",
+    "Method": "LayRaPhuongThucThanhToan",
+    "RelativePath": "api/PhuongThucThanhToan/LayRaPhuongThucThanhToan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_QLKHACHSAN.Controllers.ThanhToanController",
+    "Method": "LayThanhToan",
+    "RelativePath": "api/ThanhToan/LayThanhToan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_QLKHACHSAN.Controllers.ThanhToanController",
+    "Method": "TaoThanhToan",
+    "RelativePath": "api/ThanhToan/TaoThanhToan",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "thanhToanDTO",
+        "Type": "API_QLKHACHSAN.Controllers.ThanhToanDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_QLKHACHSAN.Controllers.ThanhToanController",
+    "Method": "XuatHoaDonVAT",
+    "RelativePath": "api/ThanhToan/XuatHoaDonVAT",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maThanhToan",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "maSoThue",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tenCongTy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ghiChu",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],

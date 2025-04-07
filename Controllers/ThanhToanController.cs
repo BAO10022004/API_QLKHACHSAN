@@ -50,16 +50,19 @@ namespace API_QLKHACHSAN.Controllers
         {
             ThanhToan thanhToan = new ThanhToan();
             var currentUsername = User.FindFirst(ClaimTypes.Name)?.Value;
+
             var user =await dbContext.Users.FirstOrDefaultAsync(u => u.Username == currentUsername);
-            var roles = user.UserRoles.Select(x => x.Role.RoleName).ToList();
-            if (!roles.Contains("RECEPTIONIST") || !(roles.Contains("MANAGER")) || !(roles.Contains("ADMIN")))
-            {
-                return StatusCode(403, "You do not have permission to book a room.");
-            }
             if (user == null)
             {
                 return Unauthorized("Must sign in to continue");
             }
+            var roles = dbContext.UserRoles.Where(u => u.UserId == user.UserId).ToList().Select(u => u.RoleId);
+            // Check Vetify
+            if (!roles.Contains(2) && !(roles.Contains(3)) && !(roles.Contains(7)))
+            {
+                return StatusCode(403, "You do not have permission to get room.");
+            }
+            
             if (thanhToanDTO == null)
             {
                 return BadRequest("Must enter properties order");
@@ -103,9 +106,9 @@ namespace API_QLKHACHSAN.Controllers
             var user = dbContext.Users.FirstOrDefault(u => u.Username == currentUsername);
             if (user == null)
                 return BadRequest("Must sign in to countinue");
-            var roles = user.UserRoles.Select(x => x.Role.RoleName).ToList();
+            var roles = dbContext.UserRoles.Where(u => u.UserId == user.UserId).ToList().Select(u => u.RoleId);
             // Check Vetify
-            if (!roles.Contains("RECEPTIONIST") || !(roles.Contains("MANAGER")) || !(roles.Contains("ADMIN")))
+            if (!roles.Contains(2) && !(roles.Contains(3)) && !(roles.Contains(7)))
             {
                 return StatusCode(403, "You do not have permission to get room.");
             }
