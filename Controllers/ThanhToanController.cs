@@ -52,7 +52,7 @@ namespace API_QLKHACHSAN.Controllers
             var currentUsername = User.FindFirst(ClaimTypes.Name)?.Value;
             var user =await dbContext.Users.FirstOrDefaultAsync(u => u.Username == currentUsername);
             var roles = user.UserRoles.Select(x => x.Role.RoleName).ToList();
-            if (roles.Contains("RECEPTIONIST") || roles.Contains("MANAGER") || roles.Contains("ADMIN"))
+            if (!roles.Contains("RECEPTIONIST") || !(roles.Contains("MANAGER")) || !(roles.Contains("ADMIN")))
             {
                 return StatusCode(403, "You do not have permission to book a room.");
             }
@@ -105,7 +105,7 @@ namespace API_QLKHACHSAN.Controllers
                 return BadRequest("Must sign in to countinue");
             var roles = user.UserRoles.Select(x => x.Role.RoleName).ToList();
             // Check Vetify
-            if (roles.Contains("RECEPTIONIST") || (roles.Contains("MANAGER")) || (roles.Contains("ADMIN")))
+            if (!roles.Contains("RECEPTIONIST") || !(roles.Contains("MANAGER")) || !(roles.Contains("ADMIN")))
             {
                 return StatusCode(403, "You do not have permission to get room.");
             }

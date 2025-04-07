@@ -26,7 +26,7 @@ namespace API_QLKHACHSAN.Controllers
                 return BadRequest("Must sign in to countinue");
             var roles = user.UserRoles.Select(x => x.Role.RoleName).ToList();
             // Check Vetify
-            if (roles.Contains("RECEPTIONIST") || (roles.Contains("MANAGER")) || (roles.Contains("ADMIN")))
+            if (!roles.Contains("RECEPTIONIST") || !(roles.Contains("MANAGER")) || !(roles.Contains("ADMIN")))
             {
                 return StatusCode(403, "You do not have permission to get room.");
             }
@@ -47,13 +47,13 @@ namespace API_QLKHACHSAN.Controllers
                 return BadRequest("Must sign in to countinue");
             var roles = user.UserRoles.Select(x => x.Role.RoleName).ToList();
             // Check Vetify
-            if (roles.Contains("RECEPTIONIST") || (roles.Contains("MANAGER")) || (roles.Contains("ADMIN")))
+            if (!roles.Contains("RECEPTIONIST") || !(roles.Contains("MANAGER")) || !(roles.Contains("ADMIN")))
             {
                 return StatusCode(403, "You do not have permission to get room.");
             }
             var listRoom = dbContext.Phongs.ToList();
             if (listRoom == null)
-                return BadRequest(new Response { Messesge = "Fail", ListRoom = null });
+                return BadRequest(new Response { Messenge = "Fail", Data = null });
             var listRoomEmpty = new List<Phong>();
             var listOrder = dbContext.DatPhongs.ToList();
             listRoom.ForEach(lr =>
@@ -82,7 +82,7 @@ namespace API_QLKHACHSAN.Controllers
                     }
                 }
             });
-            return Ok(new Response { Messesge = "Success", ListRoom = listRoom });
+            return Ok(new Response { Messenge = "Success", Data = listRoom });
         }
     }
 

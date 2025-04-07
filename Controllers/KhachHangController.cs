@@ -1,6 +1,7 @@
 ﻿using API_QLKHACHSAN.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using System.Text.RegularExpressions;
 
 namespace API_QLKHACHSAN.Controllers
@@ -73,7 +74,26 @@ namespace API_QLKHACHSAN.Controllers
             }
             return Ok(new  Response (){Messenge = "Create account success",Data =  kh });
         }
-
+        [HttpGet("GetKhachHang")]
+        [Authorize]
+        public IActionResult GetListKhachHang()
+        {
+            // Get role
+            var currentUsername = User.FindFirst(ClaimTypes.Name)?.Value;
+            var user = dbContext.Users.FirstOrDefault(u => u.Username == currentUsername);
+            if (user == null)
+                return BadRequest("Must sign in to countinue");
+            var roles = user.UserRoles.Select(x => x.Role.RoleName).ToList();
+            // Check Vetify
+            if (!roles.Contains("RECEPTIONIST") || !(roles.Contains("MANAGER")) || !(roles.Contains("ADMIN")))
+            {
+                return StatusCode(403, "You do not have permission to get room.");
+            }
+            var listRoom = dbContext.KhachHangs.ToList();
+            if (listRoom == null)
+                return BadRequest(new Response { Messenge = "Fail", Data = null });
+            return Ok(new Response { Messenge = "Success", Data = listRoom });
+        }
     }
     public class TaiKhoangDTO
     {
