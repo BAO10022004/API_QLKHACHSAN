@@ -139,50 +139,86 @@ namespace API_QLKHACHSAN.Controllers
         [HttpPut("SignIn")]
         public IActionResult SignInUser(RequestSignIn requestSignIn)
         {
-
-            if (string.IsNullOrEmpty(requestSignIn.username) && string.IsNullOrEmpty(requestSignIn.email) || string.IsNullOrEmpty(requestSignIn.password))
+            if (string.IsNullOrWhiteSpace(requestSignIn.password) ||
+                (string.IsNullOrWhiteSpace(requestSignIn.username) && string.IsNullOrWhiteSpace(requestSignIn.email)))
             {
-                return BadRequest("Missing information");
+                return BadRequest(new
+                {
+                    errorCode = "INVALID_INPUT",
+                    message = "Username/email and password are required."
+                });
             }
 
             try
             {
                 var user = dbContext.Users
-                            .FirstOrDefault(x => x.Username == requestSignIn.username || x.Email == requestSignIn.email);
+                    .FirstOrDefault(x => x.Username == requestSignIn.username || x.Email == requestSignIn.email);
 
                 if (user == null)
                 {
-                    return BadRequest("Username is incorrect");
-                }
-                byte[] hashBytes = Convert.FromBase64String(user.PasswordHash);
-                byte[] salt = new byte[16];
-                Array.Copy(hashBytes, 0, salt, 0, 16);
-                using (var pbkdf2 = new Rfc2898DeriveBytes(requestSignIn.password, salt, 65536, HashAlgorithmName.SHA1))
-                {
-                    byte[] hash = pbkdf2.GetBytes(16);
-                    for (int i = 0; i < 16; i++)
+                    return Unauthorized(new
                     {
-                        if (hashBytes[i + 16] != hash[i])
-                        {
-                            return BadRequest("Password is incorrect");
-                        }
-                    }
+                        errorCode = "USER_NOT_FOUND",
+                        message = "Username or email is incorrect."
+                    });
                 }
+
+                if (!VerifyPassword(requestSignIn.password, user.PasswordHash))
+                {
+                    return Unauthorized(new
+                    {
+                        errorCode = "INVALID_PASSWORD",
+                        message = "Password is incorrect."
+                    });
+                }
+
                 var token = GenerateJwtToken(user);
                 Session.Token = token;
-                return Ok(new Response()
-                {
-                    Messenge = "Success",
-                    Data = new { 
-                    Token = token,
-                    user = user,
-                    }
 
+                return Ok(new
+                {
+                    message = "Success",
+                    data = new
+                    {
+                        token = token,
+                        user = user
+                    }
                 });
             }
-            catch (System.Exception e)
+            catch (Exception ex)
             {
-                return BadRequest("Error: " + e.Message);
+                return StatusCode(500, new
+                {
+                    errorCode = "SERVER_ERROR",
+                    message = $"An unexpected error occurred: {ex.Message}"
+                });
+            }
+        }
+
+        private bool VerifyPassword(string inputPassword, string storedPasswordHash)
+        {
+            try
+            {
+                var hashBytes = Convert.FromBase64String(storedPasswordHash);
+                var salt = new byte[16];
+                Array.Copy(hashBytes, 0, salt, 0, 16);
+
+                using var pbkdf2 = new Rfc2898DeriveBytes(inputPassword, salt, 65536, HashAlgorithmName.SHA1);
+                var inputHash = pbkdf2.GetBytes(16);
+
+                for (int i = 0; i < 16; i++)
+                {
+                    if (hashBytes[i + 16] != inputHash[i])
+                    {
+                        return false;
+                    }
+                }
+
+                return true;
+            }
+            catch
+            {
+                return false;
             }
         }
         [HttpGet("GetUserByEmail")]

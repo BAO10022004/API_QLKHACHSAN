@@ -16,9 +16,24 @@ builder.Services.AddSession();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddHttpContextAccessor();
+
+// Add CORS configuration
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 //Add services to the container.
 var appSettings = builder.Configuration.GetSection("AppSettings").Get<AppSetting>();
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
+builder.Services.AddDbContext<QuanLyKhachSanContext>(options =>
+    options.UseSqlServer(connectionString));
 
 builder.Services.AddAuthentication(options =>
 {
@@ -70,6 +85,10 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "API_QLKHACHSAN");
 });
+
+// Enable CORS before other middleware
+app.UseCors("AllowAll");
+
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
