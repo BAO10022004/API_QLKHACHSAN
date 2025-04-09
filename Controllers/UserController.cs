@@ -136,7 +136,7 @@ namespace API_QLKHACHSAN.Controllers
             }
         }
 
-        [HttpPut("SignIn")]
+        [HttpPost("SignIn")]
         public IActionResult SignInUser(RequestSignIn requestSignIn)
         {
             if (string.IsNullOrWhiteSpace(requestSignIn.password) ||

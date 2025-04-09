@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\models\\quanlykhachsancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:models\\quanlykhachsancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|c:\\users\\giaba\\source\\repos\\3\\ky2\\cnpm\\api_qlkhachsan-1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89986366-F0B1-4170-AC4A-3AF08111290E}|API_QLKHACHSAN.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\giaba\\Documents\\Zalo Received Files\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -109,7 +109,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -125,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ChinhSachHuyPhong.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Models\\ChinhSachHuyPhong.cs",
               "RelativeDocumentMoniker": "Models\\ChinhSachHuyPhong.cs",
@@ -133,12 +133,11 @@
               "RelativeToolTip": "Models\\ChinhSachHuyPhong.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:19:15.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:19:15.704Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Models\\ApiResponse.cs",
               "RelativeDocumentMoniker": "Models\\ApiResponse.cs",
@@ -146,12 +145,11 @@
               "RelativeToolTip": "Models\\ApiResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:18:00.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:18:00.492Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AppSetting.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Models\\AppSetting.cs",
               "RelativeDocumentMoniker": "Models\\AppSetting.cs",
@@ -159,12 +157,11 @@
               "RelativeToolTip": "Models\\AppSetting.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:16:31.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:16:31.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ApiConfig.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Models\\ApiConfig.cs",
               "RelativeDocumentMoniker": "Models\\ApiConfig.cs",
@@ -172,25 +169,24 @@
               "RelativeToolTip": "Models\\ApiConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:16:27.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:16:27.623Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAUwIoAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAowIoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T18:03:51.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -198,12 +194,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-19T17:59:52.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T17:59:52.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -211,12 +206,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwCIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T17:43:19.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T17:43:19.686Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PhongServices.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Service\\PhongServices.cs",
               "RelativeDocumentMoniker": "Service\\PhongServices.cs",
@@ -224,12 +218,11 @@
               "RelativeToolTip": "Service\\PhongServices.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAEwCIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T00:22:22.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T00:22:22.332Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Session.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Models\\Session.cs",
               "RelativeDocumentMoniker": "Models\\Session.cs",
@@ -237,29 +230,28 @@
               "RelativeToolTip": "Models\\Session.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T21:00:09.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-02T21:00:09.595Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "QuanLyKhachSanContext.cs",
               "DocumentMoniker": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Models\\QuanLyKhachSanContext.cs",
               "RelativeDocumentMoniker": "Models\\QuanLyKhachSanContext.cs",
               "ToolTip": "C:\\Users\\giaba\\source\\repos\\3\\Ky2\\CNPM\\API_QLKHACHSAN-1\\Models\\QuanLyKhachSanContext.cs",
               "RelativeToolTip": "Models\\QuanLyKhachSanContext.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAuwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T20:57:57.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
             },
             {
               "$type": "Document",
