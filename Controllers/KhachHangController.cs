@@ -16,12 +16,10 @@ namespace API_QLKHACHSAN.Controllers
             this.dbContext = _dbContext ?? new QuanLyKhachSanContext();
         }
         [HttpPut("TaoTaiKhoang")]
-        public IActionResult TaoTaiKhoang(TaiKhoangDTO req)
+        public IActionResult TaoTaiKhoang([FromBody] TaiKhoangDTO req)
         {
             if (req == null)
-            {
                 return BadRequest("TaoTaiKhoang fail");
-            }
             if (string.IsNullOrEmpty(req.TenDayDu))
                 return BadRequest("TenDayDu is empty");
             if (string.IsNullOrEmpty(req.Email) && string.IsNullOrEmpty(req.SoDienThoai))
@@ -55,8 +53,9 @@ namespace API_QLKHACHSAN.Controllers
             kh.SoGiayTo = req.SoGiayTo;
             try
             {
-                kh.NgaySinh = DateOnly.Parse(req.NgaySinh);
-            }catch(Exception)
+                kh.NgaySinh  = DateOnly.ParseExact(req.NgaySinh, "dd-MM-yyyy");
+            }
+            catch(Exception)
             {
                 return BadRequest("NgaySinh incorrect");
             }
@@ -72,7 +71,7 @@ namespace API_QLKHACHSAN.Controllers
             {
                 return BadRequest($"Create fail : {ex.Message}");
             }
-            return Ok(new  Response (){Messenge = "Create account success",Data =  kh });
+            return Ok(new  Response (){Messege = "Create account success",Data =  kh });
         }
         [HttpGet("GetKhachHang")]
         [Authorize]
@@ -91,8 +90,8 @@ namespace API_QLKHACHSAN.Controllers
             }
             var listRoom = dbContext.KhachHangs.ToList();
             if (listRoom == null)
-                return BadRequest(new Response { Messenge = "Fail", Data = null });
-            return Ok(new Response { Messenge = "Success", Data = listRoom });
+                return BadRequest(new Response { Messege = "Fail", Data = null });
+            return Ok(new Response { Messege = "Success", Data = listRoom });
         }
     }
     public class TaiKhoangDTO

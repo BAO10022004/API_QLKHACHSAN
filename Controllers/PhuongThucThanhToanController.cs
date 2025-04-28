@@ -15,7 +15,6 @@ namespace API_QLKHACHSAN.Controllers
             dbContext = _dbContext ?? new QuanLyKhachSanContext();
         }
         [HttpGet("LayRaPhuongThucThanhToan")]
-        [Authorize]
         public ActionResult LayRaPhuongThucThanhToan()
         {
             // Get role
@@ -38,7 +37,7 @@ namespace API_QLKHACHSAN.Controllers
             {
                 return BadRequest("ERROR : " + ex.Message);
             }
-            return Ok(new Response(){ Messenge = "Get success", Data = listPTTT });
+            return Ok(new Response(){ Messege = "Get success", Data = listPTTT });
         }
     }
 }

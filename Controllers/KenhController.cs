@@ -28,7 +28,7 @@ namespace API_QLKHACHSAN.Controllers
             }
             return Ok(new Response()
             {
-                Messenge = "Success",
+                Messege = "Success",
                 Data = ListKenh
             });
         }

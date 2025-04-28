@@ -144,12 +144,12 @@
     "Parameters": [
       {
         "Name": "NgayNhan",
-        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.String",
         "IsRequired": false
       },
       {
         "Name": "NgayTra",
-        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -252,7 +252,7 @@
     "ContainingType": "API_QLKHACHSAN.Controllers.UserController",
     "Method": "AddRoleForUser",
     "RelativePath": "api/users/AddRoleForUser",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -277,7 +277,7 @@
   {
     "ContainingType": "API_QLKHACHSAN.Controllers.UserController",
     "Method": "GetUserByEmail",
-    "RelativePath": "api/users/GetUserByEmail",
+    "RelativePath": "api/users/GetUserByEmail/email:{email}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -285,7 +285,7 @@
       {
         "Name": "email",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -294,7 +294,7 @@
     "ContainingType": "API_QLKHACHSAN.Controllers.UserController",
     "Method": "SignInUser",
     "RelativePath": "api/users/SignIn",
-    "HttpMethod": "PUT",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [

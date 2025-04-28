@@ -1,6 +1,7 @@
 ﻿using API_QLKHACHSAN.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Globalization;
 using System.Security.Claims;
 
 namespace API_QLKHACHSAN.Controllers
@@ -16,7 +17,6 @@ namespace API_QLKHACHSAN.Controllers
         }
 
         [HttpGet("GetRoom")]
-        [Authorize]
         public IActionResult GetRoom()
         {
             // Get role
@@ -32,13 +32,12 @@ namespace API_QLKHACHSAN.Controllers
             }
             var listRoom = dbContext.Phongs.ToList();
             if (listRoom == null)
-                return BadRequest(new Response { Messenge = "Fail", Data = null });
-            return Ok(new Response { Messenge = "Success", Data = listRoom });
+                return BadRequest(new Response { Messege = "Fail", Data = null });
+            return Ok(new Response { Messege = "Success", Data = listRoom });
         }
 
         [HttpPut("GetRoomEmpty")]
-        [Authorize]
-        public IActionResult GetRoomEmpty(DateTime? NgayNhan, DateTime? NgayTra)
+        public IActionResult GetRoomEmpty(String? NgayNhan, String? NgayTra)
         {
             // Get role
             var currentUsername = User.FindFirst(ClaimTypes.Name)?.Value;
@@ -53,9 +52,34 @@ namespace API_QLKHACHSAN.Controllers
             }
             var listRoom = dbContext.Phongs.ToList();
             if (listRoom == null)
-                return BadRequest(new Response { Messenge = "Fail", Data = null });
+                return BadRequest(new Response { Messege = "Fail", Data = null });
             var listRoomEmpty = new List<Phong>();
             var listOrder = dbContext.DatPhongs.ToList();
+            DateTime dateNgayNhan, dateNgayTra;
+            if (
+                !DateTime.TryParseExact(
+                    NgayNhan,            // chuỗi cần parse
+                    "dd-MM-yyyy",         // format cần đúng
+                    CultureInfo.InvariantCulture, // culture dùng để parse (bắt buộc có)
+                    DateTimeStyles.None,  // style option
+                    out dateNgayNhan      // kết quả output
+                )
+             )
+            {
+                return BadRequest("NgayNhan incorrect");
+            }
+            if (
+                !DateTime.TryParseExact(
+                    NgayTra,            // chuỗi cần parse
+                    "dd-MM-yyyy",         // format cần đúng
+                    CultureInfo.InvariantCulture, // culture dùng để parse (bắt buộc có)
+                    DateTimeStyles.None,  // style option
+                    out dateNgayTra      // kết quả output
+                )
+             )
+            {
+                return BadRequest("NgayTra incorrect");
+            }
             listRoom.ForEach(lr =>
             {
                 if (lr.TrangThai == "1")
@@ -68,8 +92,8 @@ namespace API_QLKHACHSAN.Controllers
                         {
                             if (lo.MaPhong.Equals(lr.MaPhong))
                             {
-                                if (lo.NgayNhanPhong > (NgayNhan) &
-                                     lo.NgayTraPhong < (NgayTra))
+                                if (lo.NgayNhanPhong > (dateNgayNhan) &
+                                     lo.NgayTraPhong < (dateNgayTra))
                                 {
                                     listRoomEmpty.Add(lr);
                                 }
@@ -82,7 +106,7 @@ namespace API_QLKHACHSAN.Controllers
                     }
                 }
             });
-            return Ok(new Response { Messenge = "Success", Data = listRoom });
+            return Ok(new Response { Messege = "Success", Data = listRoom });
         }
     }
 

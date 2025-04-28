@@ -30,7 +30,8 @@ namespace API_QLKHACHSAN.Controllers
 
         [HttpPost("SignUpUser")]
         public IActionResult SignUpUser(RequestSignUp requestSignUp)
-        {            // check username
+        {            
+            // check username
             if (requestSignUp.username.Equals("") ||
                requestSignUp.password.Equals("") ||
                requestSignUp.email.Equals("")
@@ -82,7 +83,7 @@ namespace API_QLKHACHSAN.Controllers
 
             try
             {
-                if (dbContext.Users.FirstOrDefault(x => x.Username == requestSignUp.email) != null)
+                if (dbContext.Users.FirstOrDefault(x => x.Email == requestSignUp.email) != null)
                 {
                     return BadRequest("Email is already taken");
                 }
@@ -113,26 +114,23 @@ namespace API_QLKHACHSAN.Controllers
             }
             catch (System.Exception e)
             {
-                return BadRequest("Can't hash password");
+                return StatusCode(403, "Can't hash password");
             }
+            user.UserId = dbContext.Users.Max(x => x.UserId) + 1;
             user.Email = requestSignUp.email;
             user.DateCreated = DateTime.Now;
-            using var transaction = dbContext.Database.BeginTransaction();
             try
             {
                 dbContext.Users.Add(user);
                 dbContext.SaveChanges();
-
-                transaction.Commit();
-                return Ok(new Response() { 
-                    Messenge = "Success",
+                return StatusCode(203, new Response() { 
+                    Messege = "Success",
                     Data = user 
                 });
             }
             catch (DbUpdateException ex)
             {
-                transaction.Rollback();
-                return BadRequest($"Database error: {ex.Message}");
+                return StatusCode(500, $"Database error: {ex.Message}");
             }
         }
 
@@ -156,7 +154,7 @@ namespace API_QLKHACHSAN.Controllers
 
                 if (user == null)
                 {
-                    return Unauthorized(new
+                    return NotFound(new
                     {
                         errorCode = "USER_NOT_FOUND",
                         message = "Username or email is incorrect."
@@ -221,7 +219,7 @@ namespace API_QLKHACHSAN.Controllers
                 return false;
             }
         }
-        [HttpGet("GetUserByEmail")]
+        [HttpGet("GetUserByEmail/email:{email}")]
         public IActionResult GetUserByEmail(string email)
         {
             
@@ -234,7 +232,7 @@ namespace API_QLKHACHSAN.Controllers
             {
                 return BadRequest("User not found");
             }
-            return Ok(new Response() {Messenge = "Success", Data = user });
+            return Ok(new Response() {Messege = "Success", Data = user });
         }
         [HttpGet]
         public string GenerateJwtToken(User user)
@@ -260,13 +258,13 @@ namespace API_QLKHACHSAN.Controllers
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
-        [HttpGet("AddRoleForUser")]
+        [HttpPost("AddRoleForUser")]
         public IActionResult AddRoleForUser(string? username, string? email, List<string> roleNameList)
         {
             // vetify data
             if (username == null && email == null)
                 return BadRequest("Must input username or email");
-            if (roleNameList == null)
+            if (roleNameList == null|| roleNameList.Count == 0)
                 return BadRequest("Must input role");
             //Find user
             var user = dbContext.Users.FirstOrDefault(x => x.Username.Equals(username) || x.Email.Equals(email));
@@ -275,13 +273,13 @@ namespace API_QLKHACHSAN.Controllers
                 return NotFound("Not found user");
             }
             //Find role
+
             List<Role> roleList = new List<Role>();
             roleNameList.ForEach(name =>
             {
                 roleList.Add(dbContext.Roles.FirstOrDefault(r => r.RoleName == name));
             });
-            if (roleList.Count == 0)
-                return NotFound("Not found role");
+           
             // Set up
             List<UserRole> roleUserList = new List<UserRole>();
             roleList.ForEach(x =>
@@ -293,7 +291,7 @@ namespace API_QLKHACHSAN.Controllers
             //Save
             dbContext.UserRoles.AddRange(roleUserList);
             dbContext.SaveChanges();
-            return Ok(new Response() {Messenge= "Add role success",Data= user});
+            return Ok(new Response() {Messege= "Add role success",Data= user});
         }
     }
     public class RequestSignUp

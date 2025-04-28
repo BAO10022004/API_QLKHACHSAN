@@ -22,12 +22,12 @@ namespace API_QLKHACHSAN.Controllers
             var currentUsername = User.FindFirst(ClaimTypes.Name)?.Value;
             var user = dbContext.Users.FirstOrDefault(u => u.Username == currentUsername);
             if (user == null)
-                return BadRequest("Must sign in to countinue");
+                return Unauthorized("Must sign in to countinue");
             var roles = user.UserRoles.Select(x => x.Role.RoleName).ToList();
             // Check Vetify
             if (roles.Contains("RECEPTIONIST") || (roles.Contains("MANAGER")) || (roles.Contains("ADMIN")))
             {
-                return StatusCode(403, "You do not have permission to get room.");
+                return Unauthorized("You do not have permission to get room.");
             }
             List<ThanhToan> listTT = new List<ThanhToan>();
             try
@@ -39,7 +39,7 @@ namespace API_QLKHACHSAN.Controllers
                 return BadRequest("ERROR: " + ex.Message);
             }
             return Ok(new Response() { 
-                Messenge = "Get success",
+                Messege = "Get success",
                 Data = listTT
             });
         }
@@ -94,7 +94,7 @@ namespace API_QLKHACHSAN.Controllers
             }
             return Ok(new Response()
             {
-                Messenge = "ThanhToan success",
+                Messege = "ThanhToan success",
                 Data = thanhToan
             });
         }
@@ -115,7 +115,7 @@ namespace API_QLKHACHSAN.Controllers
             var thanhToan = dbContext.ThanhToans.FirstOrDefault(p => p.MaThanhToan == maThanhToan);
             if (thanhToan == null)
             {
-                return BadRequest("MaDatPhong not exits");
+                return BadRequest("thanhToan not exits");
             }
             if (string.IsNullOrEmpty(maSoThue))
             {
@@ -143,7 +143,7 @@ namespace API_QLKHACHSAN.Controllers
             }
             return Ok(new Response()
             {
-                Messenge = "XuatHoaDonVAT success",
+                Messege = "XuatHoaDonVAT success",
                 Data = thanhToan
             });
         }

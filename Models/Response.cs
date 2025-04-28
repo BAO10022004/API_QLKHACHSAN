@@ -2,10 +2,10 @@
 {
     public class Response
     {
-        string messenge;
+        string messege;
         object data;
 
-        public string Messenge { get => messenge; set => messenge = value; }
+        public string Messege { get => messege; set => messege = value; }
         public object Data { get => data; set => data = value; }
     }
 }
